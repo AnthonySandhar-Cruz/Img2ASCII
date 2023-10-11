@@ -13,3 +13,6 @@ The ImageToASCII.py file is the Tkinter GUI for choosing image files and convert
 pyinstaller --onefile --noconsole ImageToASCII.py
 ```
 Note that the dimensions of the inputted image are kept in the conversion process. This means every pixel is turned into an ASCII character. It is recommended to reduce the image size before inputting it into the program. The output file will be saved to your downloads.
+
+## How it Works
+The char_pixel_map.txt file is turned into a dictionary assigning each ASCII character a value from 0 to 255 based on how many black pixels appear in the character. The user then inputs an image which is converted to greyscale and the pixel values are turned into an array. The value of each pixel is compared to the ASCII character of the nearest value, then the pixel value is replaced by that ASCII character. The return is a text file where the array of ASCII characters is printed.
