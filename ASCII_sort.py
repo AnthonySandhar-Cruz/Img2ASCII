@@ -17,7 +17,9 @@ def write_to_file(pixels_list):
         for i in range(len(pixels_list)):
             file.write(f"{pixels_list[i][0]} {pixels_list[i][1]}\n")
 
-DIRECTORY_PATH = r'C:\Users\antho\OneDrive\Documents\Coding\Python\ASCII Art\char_images'
+# Insert the path to all of the generated images of characters. 
+# Make sure all files are placed in a seperate directory
+DIRECTORY_PATH = r''
 FILE_LIST = os.listdir(DIRECTORY_PATH)
 
 def main():
