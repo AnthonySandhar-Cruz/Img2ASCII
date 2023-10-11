@@ -4,6 +4,7 @@ import string
 image_width, image_height = 50, 50
 font_size = 36
 background_color = (255, 255, 255)
+# You can change the font you want to to use for the ASCII characters
 font = ImageFont.truetype("C:\Windows\Fonts\Fira Code\CascadiaCode.ttf", font_size)
 
 text_color = (0, 0, 0)
